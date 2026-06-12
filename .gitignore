@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+*.egg-info/
+*.log
+
+# Secrets / environment
+.env
+.env.*
+*.key
+*.pem
+*.cert
+
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]serSettings/
+*.csproj
+*.sln
+*.apk
+*.ipa
+
+# Unity Meta XR SDK (install via Package Manager, do not commit)
+Assets/Oculus/
+Assets/OVR/
+Assets/MetaXR*/
+Packages/com.meta*/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
