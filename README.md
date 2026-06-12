@@ -25,7 +25,7 @@ Meta Quest 3를 착용한 사용자가 손을 움직이면, 그 핸드트래킹 
 
 ## 시스템 아키텍처
 
-<img width="700" alt="시스템 아키텍처" src="docs/images/architecture.png" />
+<img width="700" alt="architecture png" src="https://github.com/user-attachments/assets/fa77c94b-ea33-435b-9fb8-e0d00053f028" />
 
 세 개의 노드로 구성됩니다. Quest와 연동된 Unity(Windows)가 손 위치를 보내고 로봇 영상을 받으며, Linux PC가 좌표 변환과 로봇 제어를 중계하고, RB5-850이 실제 동작을 수행합니다.
 
@@ -36,7 +36,7 @@ Meta Quest 3를 착용한 사용자가 손을 움직이면, 그 핸드트래킹 
 
 ## 동작 흐름
 
-<img width="700" alt="동작 흐름" src="docs/images/flow.png" />
+<img width="700" alt="flow png" src="https://github.com/user-attachments/assets/9c4c1170-60ef-4ff8-b6e2-a7d7a0a95528" />
 
 핸드 트래킹 데이터가 20Hz로 들어오면, 수신 버퍼에서 **최신 패킷 1개만** 골라 로봇 좌표로 변환하고, 작업공간 범위로 제한한 뒤 로봇에 전달합니다. 이 루프가 실시간으로 반복됩니다.
 
@@ -46,7 +46,7 @@ Meta Quest 3를 착용한 사용자가 손을 움직이면, 그 핸드트래킹 
 
 이 프로젝트에서 가장 의미 있었던 문제 해결 과정입니다.
 
-<img width="700" alt="기술적 도전과 해결" src="docs/images/challenges.png" />
+<img width="700" alt="challenges png" src="https://github.com/user-attachments/assets/fa351dbc-a38a-4b20-865e-23b3348f42a5" />
 
 ### 1. 실시간 제어 시 명령이 쌓이는 문제 (가장 큰 난관)
 
